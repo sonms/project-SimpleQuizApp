@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             } else {
                 val intent = Intent(this, QuizQuestionActivity::class.java) //원하는 클래스로 데이터 받기
                 intent.putExtra(Constants.USER_NAME, et_name.text.toString()) //이름전송
-                startActivity(intent) //넘겨줌?
+                startActivity(intent) //intent로 넘겨준 값을 토대로 액티비티 실행
                 finish() //종료
             }
         }
