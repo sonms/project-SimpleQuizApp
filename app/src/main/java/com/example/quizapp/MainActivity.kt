@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         btn_start.setOnClickListener {
             if (et_name.text.toString().isEmpty()) {//text라인에서 이름을 입력받지 못했다면
-                Toast.makeText(this,"Please enter yout name", Toast.LENGTH_SHORT).show() //짧게 토스트메세지
+                Toast.makeText(this,"Please enter you name", Toast.LENGTH_SHORT).show() //짧게 토스트메세지
             } else {
                 val intent = Intent(this, QuizQuestionActivity::class.java) //원하는 클래스로 데이터 받기
                 intent.putExtra(Constants.USER_NAME, et_name.text.toString()) //이름전송
