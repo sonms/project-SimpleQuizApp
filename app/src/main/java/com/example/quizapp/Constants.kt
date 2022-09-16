@@ -118,7 +118,8 @@ object Constants{
             4
         )
         set.add(que9)
-
+        
+        //들어있는 문제 수 중 5개만 뽑아서 랜덤으로 저장(중복 x)
         while (questionsList.size < 5) {
             val ran = set.random()
             if (questionsList.contains(ran)) {
