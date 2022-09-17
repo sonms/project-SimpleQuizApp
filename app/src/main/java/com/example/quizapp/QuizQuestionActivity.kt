@@ -105,7 +105,7 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
     @SuppressLint("SetTextI18n")
     private fun setQuestion() {
         val question = mQuestionList!![mCurrentPosition - 1]
-        //현재위치-1을 뺀 질문목록이 할당한질문nullable유형이될것이므로 리스트의 인덱스 처음은 0이니까 -1한듯 문제의id=1이지만 인덱스는 0
+        //현재위치에서 -1을 뺀 질문목록이 할당한질문이다. nullable유형이될것이므로 리스트의 인덱스 처음은 0이니까 -1한듯 문제의id=1이지만 인덱스는 0
         defaultOptionsView() //질문을 새로 설정할때마다 기본 옵션보기를 설정
         if (mCurrentPosition == mQuestionList!!.size) {
             //문제를 출력할 때 지금이 size의 끝이라면 FINISH로 할당
