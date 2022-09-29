@@ -62,7 +62,7 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
 
                     when{
                         mCurrentPosition <= mQuestionList!!.size -> {
-
+                            //문제 
                             setQuestion()
                         }
                         else -> {
