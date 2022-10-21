@@ -9,7 +9,9 @@ class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
-
+        
+        //getextra=intent로 넘긴값받기
+        //putextra=intent로 값넘기기
         val username = intent.getStringExtra(Constants.USER_NAME)
         tv_name.text = username
 
