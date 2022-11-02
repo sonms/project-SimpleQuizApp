@@ -34,7 +34,11 @@
             android:layout_height="142dp"
             android:layout_marginTop="16dp"
             android:src="@drawable/thousand" />
-
+        
+        
+        <!--style은 수직 진행률 표시-->
+        <!--developer android com = progressbar에 코드있음을 보임(determinateprogress웹내검색)-->
+       
         <LinearLayout
             android:id="@+id/ll_progress_details"
             android:layout_width="match_parent"
@@ -64,9 +68,7 @@
                 android:textSize="14sp"
                 tools:text="0/5"
                 />
-            <!--style은 수직 진행률 표시-->
-            <!--developer android com = progressbar에 코드있음을 보임(determinateprogress웹내검색)-->
-        </LinearLayout>
+            </LinearLayout>
 
         <TextView
             android:id="@+id/tv_option_one"
@@ -123,6 +125,6 @@
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
-        <!--1시간04 54까지 봄-->
+        
     </LinearLayout>
 </ScrollView>
