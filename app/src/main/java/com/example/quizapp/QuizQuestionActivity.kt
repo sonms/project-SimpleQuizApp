@@ -18,8 +18,8 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
     private var mCurrentPosition : Int = 1 //첫질문 시작
     private var mQuestionList : ArrayList<Question>? = null //질문목록을 설정하기 위해 사용할 수 있는 개체가 필요
     private var mSelectedOptionPosition : Int = 0 //현재선택한값체크
-    private var mCorrectAnswers : Int = 0
-    private var mUserName: String? = null
+    private var mCorrectAnswers : Int = 0 // 정답 체크용 변수
+    private var mUserName: String? = null //유저 설정 네임 받아오기
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
