@@ -125,10 +125,10 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
 
 
     }
-
+   //선택 drawable 설정
     private fun defaultOptionsView() {
         val options = ArrayList<TextView>()//ui보기요소
-        options.add(0, tv_option_one)
+        options.add(0,tv_option_one)
         options.add(1,tv_option_two)
         options.add(2,tv_option_three)
         options.add(3,tv_option_four)
